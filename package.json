@@ -1,0 +1,17 @@
+{
+  "name": "sesmail-grabber",
+  "version": "0.0.1",
+  "description": "A short script to handle fetching SES mail from S3 via SNS notification on PUT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Sturdivant",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.7.21",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "sns-validator": "^0.2.2"
+  }
+}
