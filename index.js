@@ -1,3 +1,9 @@
+var config = {
+	maildir: "/home/sesmail/Maildir",
+	port: 17231,
+	bind: '127.0.0.1',
+};
+
 const path = require('path');
 var app = require('express')();
 var AWS = require('aws-sdk');
@@ -6,12 +12,6 @@ var fs = require('fs');
 var https = require('https');
 var MessageValidator = require('sns-validator');
 var validator = new MessageValidator();
-
-var config = {
-	maildir: "/home/sesmail/Maildir",
-	port: 17231,
-	bind: '127.0.0.1',
-};
 
 var bodyParser = require('body-parser');
 // All POST bodies are expected to be JSON, and SNS currently uses text/plain for some reason.
